@@ -2,6 +2,9 @@
   #_{:clj-kondo/ignore [:refer-all]}
   (:require [clojure.test :refer :all]))
 
+;; extendend `+` and `*` operations defined in the book.
+;; yet the book doesn't provide any implementations.
+
 ;; xxx check for matrix type in clojure
 (defn tns+
   "need extended edition of + handling vectors; basically matrix addition"

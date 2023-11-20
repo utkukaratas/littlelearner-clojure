@@ -26,7 +26,7 @@
 
 (defn ranked [t a]
   (cond
-    (coll? t) (ranked (first t) (+ 1 a))
+    (coll? t) (ranked (first t) (inc a))
     :else a))
 
 (defn rank
@@ -34,26 +34,42 @@
   [t]
   (ranked t 0))
 
+;; a scalar is a zero rank tensor, and a vector is a first rank tensor
+(is (= 0 (rank 555)))
 (is (= 1 (rank [9])))
 (is (= 3 (rank [[[8] [9]] [[4] [7]]])))
 
+;; the book does not provide a `sum` function (it does give you sum1).
+;; let's do that ourselves.
 
-;; xxx same here
-(defn sqr [x] (* x x))
+;; the law of sum:
+;; for a tensor t with rank r, the rank of (sum t) is r - 1
 
 (defn summed [t i a]
-  (prn "summed" [t i a])
+  (tap> ["summed" t i a])
   (cond
     (zero? i) (+ (first t) a)
-    :else (summed t (- i 1) (tns+ (nth t i) a))))
+    :else (summed t (dec i) (tns+ (nth t i) a))))
 
+;; this is what the book calls `sum` but actually is sum1
+(defn sum1 [t]
+  ;; (prn "sum" [t])
+  (summed t (dec (count t)) 0.0))
+
+;; so this is our sum:
+;; xxx impl
 (defn sum [t]
-  (prn "sum" [t])
-  (summed t (- (count t) 1) 0.0))
+  ;; (prn "sum" [t])
+  (tap> ["sum" t])
+  (cond
+    (> 1 (rank t)) (summed t (dec (count t)) 0.0)
+    :else (sum1 t)))
 
-(is (= 36.0 (sum [10.0 12.0 14.0])))
+;; (is (= 36.0 (sum [10.0 12.0 14.0])))
 (is (= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]])))
 
+;; xxx same extended ops. implement these too.
+(defn sqr [x] (* x x))
 
 (defn l2-loss
   "xxx"
