@@ -609,3 +609,152 @@ clj꞉littlelearner0.matrixops꞉> 
 
 ; 4 tests finished, all passing 👍, ns: 1, vars: 1
 clj꞉littlelearner0.matrixops꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.matrixops
+;   littlelearner0.matrixops-test
+
+; 4 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉littlelearner0.matrixops꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.matrixops
+;   littlelearner0.matrixops-test
+
+; 4 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉littlelearner0.matrixops꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.ch03
+;   littlelearner0.ch03-test
+
+"xxx" 2 14.0 false
+"xxx" 1 12.0 false
+"xxx" 0 10.0 true
+"xxx" 1 [[5 6] [7 8]] false
+"xxx" 0 [[1 2] [3 4]] true
+; FAIL in littlelearner0.ch03-test/ch03-test (ch03_test.clj:13):
+; ch03
+; expected:
+36.0
+
+; actual:
+10.0
+
+; ERROR in littlelearner0.ch03-test/ch03-test (Numbers.java:14):
+; ch03
+; error: java.lang.ClassCastException: class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:14)
+; expected:
+(= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]]))
+
+; 8 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉littlelearner0.ch03꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.ch03
+;   littlelearner0.ch03-test
+
+"xxx" 2 14.0 false
+"xxx" 1 12.0 false
+"xxx" 0 10.0 true
+"xxx" 1 [[5 6] [7 8]] false
+"xxx" 0 [[1 2] [3 4]] true
+; FAIL in littlelearner0.ch03-test/ch03-test (ch03_test.clj:13):
+; ch03
+; expected:
+36.0
+
+; actual:
+10.0
+
+; ERROR in littlelearner0.ch03-test/ch03-test (Numbers.java:14):
+; ch03
+; error: java.lang.ClassCastException: class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:14)
+; expected:
+(= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]]))
+
+; 8 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉littlelearner0.ch03꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.ch03
+;   littlelearner0.ch03-test
+
+"xxx" 2 14.0 false
+"xxx" 1 12.0 false
+"xxx" 0 10.0 true
+"xxx" 1 [[5 6] [7 8]] false
+"xxx" 0 [[1 2] [3 4]] true
+; FAIL in littlelearner0.ch03-test/ch03-test (ch03_test.clj:13):
+; ch03
+; expected:
+36.0
+
+; actual:
+10.0
+
+; ERROR in littlelearner0.ch03-test/ch03-test (Numbers.java:14):
+; ch03
+; error: java.lang.ClassCastException: class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:14)
+; expected:
+(= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]]))
+
+; 8 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉littlelearner0.ch03꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.ch03
+;   littlelearner0.ch03-test
+
+"xxx" 2 14.0 false
+"xxx" 1 12.0 false
+"xxx" 0 10.0 true
+"xxx" 1 [[5 6] [7 8]] false
+"xxx" 0 [[1 2] [3 4]] true
+; FAIL in littlelearner0.ch03-test/ch03-test (ch03_test.clj:13):
+; ch03
+; expected:
+36.0
+
+; actual:
+10.0
+
+; ERROR in littlelearner0.ch03-test/ch03-test (Numbers.java:14):
+; ch03
+; error: java.lang.ClassCastException: class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:14)
+; expected:
+(= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]]))
+
+; 8 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉littlelearner0.ch03꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.matrixops
+;   littlelearner0.matrixops-test
+
+; 4 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉littlelearner0.matrixops꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.ch03-test
+;   littlelearner0.ch03
+
+"xxx" 2 14.0 false
+"xxx" 1 12.0 false
+"xxx" 0 10.0 true
+"xxx" 1 [[5 6] [7 8]] false
+"xxx" 0 [[1 2] [3 4]] true
+; FAIL in littlelearner0.ch03-test/ch03-test (ch03_test.clj:13):
+; ch03
+; expected:
+36.0
+
+; actual:
+10.0
+
+; ERROR in littlelearner0.ch03-test/ch03-test (Numbers.java:14):
+; ch03
+; error: java.lang.ClassCastException: class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:14)
+; expected:
+(= [[3 7] [11 5]] (sum [[[1 2] [3 4]] [[5 6] [7 8]]]))
+
+; 8 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉littlelearner0.ch03-test꞉> 
+; Running tests for the following namespaces:
+;   littlelearner0.matrixops
+;   littlelearner0.matrixops-test
+
+; 4 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉littlelearner0.matrixops꞉> 

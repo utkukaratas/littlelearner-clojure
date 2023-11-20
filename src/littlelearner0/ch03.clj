@@ -31,18 +31,18 @@
 (defn sqr [x] (* x x))
 
 (defn summed [t i a]
-  (prn "xxx" t i a "/" (nth t i))
+  (prn "summed" [t i a])
   (cond
-    (zero? i) (+ a (first t))
-    :else (summed t (- i 1) (tns+ a (nth t i)))))
+    (zero? i) (+ (first t) a)
+    :else (summed t (- i 1) (tns+ (nth t i) a))))
 
 (defn sum [t]
+  (prn "sum" [t])
   (summed t (- (count t) 1) 0.0))
 
 (defn l2-loss
   "xxx"
   [target]
-
   (fn [xs ys]
     (fn [teta]
       (let [pred-ys ((target xs) teta)]
