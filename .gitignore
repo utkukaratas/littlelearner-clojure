@@ -12,3 +12,5 @@ pom.xml.asc
 .hgignore
 .hg/
 .clj-kondo/
+.clerk/
+output.calva-repl
